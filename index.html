@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Material Landing </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="frontweb.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+         <script>
+              var final;
+              const url = "https://reqres.in/api/users?page=2";
+              fetch(url)
+              .then(res =>{
+                   return res.json();
+              })
+              .then(data =>{
+                   console.log(data);
+                   final = data;
+                   document.getElementsByClassName("team-second-first-first")[0].firstElementChild.src = final.data[0].avatar
+                   document.getElementsByClassName("team-second-first-second")[0].h4 
+                   document.getElementsByClassName("team-second-second-first")[0].firstElementChild.src = final.data[5].avatar
+                   document.getElementsByClassName("team-second-third-first")[0].firstElementChild.src = final.data[2].avatar
+                   document.getElementsByClassName("team-second-fourth-first")[0].firstElementChild.src = final.data[3].avatar
+
+              })
+              .catch(err =>{
+                   console.log(err)
+              })
+         </script>
+          <nav class="navbar">
+               <div class="nav-logo">
+                    <a href="/"><strong>Material Landing</strong></a>
+               </div>
+               <ul class="nav-links">
+                    <li><a href="about">About</a></li>
+                    <li><a href="project">Projects</a></li>
+                    <li><a href="pricing">Pricing</a></li>
+                    <li><a href="team">Team</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <button class="nav-btn">DOWNLOAD</button>
+               </ul>
+               <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                         <i class="fa fa-bars"></i>
+                    </label>
+          </nav>
+
+          <section class="temp">
+               <div class="temp-body">
+                    <h1>Your Success is Our Mission</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minus ipsum,itaque<br>
+                       architecto beatae ut quibusdam corporis voluptatem mollitia in reiciendis nisi,<br>
+                       consectetur repellendus ducimus quia quisquam.</p>
+                    <div class="temp-btn">
+                         <a href="https://www.youtube.com/watch?v=60ItHLz5WEA" class="first"><i class="fa fa-play"></i>VIEW DEMO</a>
+                         <a class="second">LEARN MORE</a>
+                    </div>
+               </div>
+          </section>
+
+     <section class="section-body">
+          <div class="section-first">
+               <i class="fa fa-line-chart"></i>
+               <h5>Agile Frameworks</h5>
+               <p>Leverage agile frameworks to provide a robust synopsis for high level overviews</p>
+          </div>
+          <div class="section-second">
+               <i class="fa fa-industry"></i>
+               <h5>Corporate Strategy</h5>
+               <p>Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition</p>
+          </div>
+          <div class="section-third">
+               <i class="fa fa-users"></i>
+               <h5>Workplace Diversity</h5>
+               <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empoverment</p>
+          </div>
+          <div class="section-fourth">
+               <i class="fa fa-bullhorn"></i>
+               <h5>Survival Strategies</h5>
+               <p>Bring to the table win-win survival strategies to ensure proactive domination</p>
+          </div>
+     </section>
+
+     <section class="info-body">
+          <div class="info-first">
+               <h3>Why Work With Us?</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+               do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+          <div class="info-second">
+               <div class="info-second-first">
+                    <i class="fa fa-dashboard"></i>
+                    <h4>Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis aute irure dolor in reprehenderit.</p>
+               </div>
+               <div class="info-second-second">
+                    <i class="fa fa-comments"></i>
+                    <h4>Feedback</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis aute irure dolor in reprehenderit.</p>
+               </div>
+               <div class="info-second-third">
+                    <i class="fa fa-cubes"></i>
+                    <h4>Execution</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis aute irure dolor in reprehenderit.</p>
+               </div>
+          </div>
+     </section>
+
+     <div class="project-body">
+          <div class="project-first">
+               <h3>Our best projects</h3>
+               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+               dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+               sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="project-second">
+               <div class="project-second-first">
+                    <img src="https://wallpaperaccess.com/full/2295784.jpg"  alt="name" />
+               </div>
+               <div class="project-second-second">
+                    <div class="project-second-second-first">
+                         <i class="fa fa-book"><span>Education</span></i>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                    <div class="project-second-second-second">
+                         <i class="fa fa-code"><span>Technology</span></i>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                    <div class="project-second-second-third">
+                         <i class="fa fa-money"><span>Finance</span></i>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    </div>
+               </div>
+          </div>
+
+          <hr>
+
+          <div class="project-third">
+               <div class="project-third-first">
+                    <div class="project-third-first-first">
+                         <i class="fa fa-bar-chart"><span>Marketing</span></i>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    </div>
+                    <div class="project-third-first-second">
+                         <i class="fa fa-music"><span>Entertainment</span></i>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    </div>
+                    <div class="project-third-first-third">
+                         <i class="fa fa-smile-o"><span>Communication</span></i>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    </div>
+               </div>
+               <div class="project-third-second">
+                    <img src="https://wallpapercave.com/wp/wp2752752.jpg"  alt="name" />
+               </div>
+          </div>
+     </div>
+
+     <div class="price-body">
+          <div class="price-body-first">
+               <h3>Our pricing plans</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam.Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+          </div>
+          <div class="price-body-second">
+               <div class="price-body-second-first">
+                    <h5>Individual</h5></br>
+                    <h3>$9/m</h3></br>
+                    <p>1 person</p></br>
+                    <p>10 projects</p></br>
+                    <p>100 features</p></br>
+                    <p>20GB storage</p></br>
+                    <button>BUY NOW</button>
+               </div>
+               <div class="price-body-second-second">
+                    <h5>Startup</h5></br>
+                    <h3>$29/m</h3></br>
+                    <p>10 person</p></br>
+                    <p>100 projects</p></br>
+                    <p>200 features</p></br>
+                    <p>100GB storage</p></br>
+                    <button>BUY NOW</button>
+               </div>
+               <div class="price-body-second-third">
+                    <h5>Enterprise</h5></br>
+                    <h3>$99/m</h3></br>
+                    <p>10+ person</p></br>
+                    <p>Unlimited projects</p></br>
+                    <p>Unlimited features</p></br>
+                    <p>1TB storage</p></br>
+                    <button>BUY NOW</button>
+               </div>
+          </div>
+     </div>
+
+     <div class="team">
+          <div class="team-first">
+               <h3>Our team members</h3>
+               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="team-second">
+               <div class="team-second-first">
+                    <div class="team-second-first-first">
+                         <img src="https://dvyvvujm9h0uq.cloudfront.net/com/articles/1515136552-blog-featured1.jpg" alt="Nicole" />
+                    </div>
+                    <div class="team-second-first-second">
+                         <h4>Nicole West</h4>
+                         <h5>Lead Designer</h5>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                         <i class="fa fa-twitter"><span>@nicolewest</span></i>
+                    </div>
+               </div>
+               <div class="team-second-second">
+                    <div class="team-second-second-first">
+                         <img src="https://dvyvvujm9h0uq.cloudfront.net/com/articles/1515136552-blog-featured1.jpg" alt="Hannah" />
+                    </div>
+                    <div class="team-second-second-second">
+                         <h4>Hannah Cruz</h4>
+                         <h5>Photographer</h5>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                         <i class="fa fa-twitter"><span>@hannahcruz</span></i>
+                    </div>
+               </div>
+               <div class="team-second-third">
+                    <div class="team-second-third-first">
+                         <img src="https://media.istockphoto.com/photos/developer-in-office-picture-id1006045878?k=20&m=1006045878&s=612x612&w=0&h=B31ySrQ--hHx92Hqa0ha-w5i33DN55qOHFU01PtyfU0=" alt="Mark" />
+                    </div>
+                    <div class="team-second-third-second">
+                         <h4>Mark Hall</h4>
+                         <h5>Web Developer</h5>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                         <i class="fa fa-twitter"><span>@markhall</span></i>
+                    </div>
+               </div>
+               <div class="team-second-fourth">
+                    <div class="team-second-fourth-first">
+                         <img src="https://media.istockphoto.com/photos/portrait-of-a-smart-and-handsome-it-specialist-wearing-glasses-smiles-picture-id1197071216?k=20&m=1197071216&s=612x612&w=0&h=JEx2IgXxCr1ZNrgRLzbwx55CjpDxiDU0Vg8_ifjR6Pc=" alt="Vincent" />
+                    </div>
+                    <div class="team-second-fourth-second">
+                         <h4>Vincent Harris</h4>
+                         <h5>Web Developer</h5>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                         <i class="fa fa-twitter"><span>@vincentharris</span></i>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <div class="contact-body">
+          <div class="contact-body-first">
+               <h3>Contact us</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+               Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+          </div>
+          <div class="contact-body-second">
+               <div class="contact-body-second-first">
+                    <form>
+                         <div class="form-first">
+                              <div class="form-first-first">
+                                   <label for="name">Your name</label></br>
+                                   <input type="text" id="name">
+                              </div>
+                              <div class="form-first-second">
+                                   <label for="email">Your email</label></br>
+                                   <input type="email" id="name">
+                              </div>
+                         </div>
+                         <div class="form-second">
+                              <label for="subject">Subject</label></br>
+                              <input type="text" id="subject"></br>
+                         </div>
+                         <div class="form-third">
+                              <label for="message">Your message</label></br>
+                              <input type="text" id="message">
+                         </div>
+                         <div class="form-btn">
+                              <button>SEND</button>
+                         </div>
+                    </form>
+               </div>
+               <div class="contact-body-second-second">
+                    <i class="fa fa-map-marker"></i>
+                    <p>140,City Center,New York,U.S.A</p>
+                    <i class="fa fa-phone"></i>
+                    <p>+ 01 234 567 89</p>
+                    <i class="fa fa-envelope"></i>
+                    <p>contact@company.com</p>
+               </div>
+          </div>
+     </div>
+     <div class="footer">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-google-plus"></i>
+          <i class="fa fa-linkedin"></i>
+     </div>
+     <div class="footer-title">
+          <p>&copy Material Landing</p>
+     </div>
+</body>
+</html>
